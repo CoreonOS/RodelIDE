@@ -4,6 +4,11 @@ project(simple_ide LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Enable automatic processing of Qt meta-object files (moc), UI, and resource files
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
+
 # Try Qt6 first, fallback to Qt5
 find_package(Qt6 COMPONENTS Widgets QUIET)
 if(NOT Qt6_FOUND)

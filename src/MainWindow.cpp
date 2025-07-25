@@ -9,11 +9,17 @@
 #include <QTextStream>
 #include <QDir>
 #include <QFileInfo>
+#include <QFont>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), editor(new QTextEdit(this))
 {
     setCentralWidget(editor);
+
+    // Use Consolas or system monospace if unavailable
+    QFont monoFont(QStringLiteral("Consolas"));
+    monoFont.setStyleHint(QFont::Monospace);
+    editor->setFont(monoFont);
 
     // Create File menu
     QMenu *fileMenu = menuBar()->addMenu(tr("&File"));
@@ -28,7 +34,7 @@ MainWindow::MainWindow(QWidget *parent)
     // Status bar message
     statusBar()->showMessage(tr("Ready"));
 
-    resize(800, 600);
+    resize(800, 600); //Size of the window
     setCurrentFile(QString());
 }
 
@@ -39,6 +45,8 @@ void MainWindow::newFile()
         setCurrentFile(QString());
     }
 }
+
+
 
 void MainWindow::openFile()
 {
@@ -120,5 +128,5 @@ void MainWindow::setCurrentFile(const QString &file)
     setWindowModified(false);
 
     QString shownName = currentFile.isEmpty() ? tr("untitled.txt") : QFileInfo(currentFile).fileName();
-    setWindowTitle(tr("%1[*] - Simple IDE").arg(shownName));
+    setWindowTitle(tr("%1[*] - RodelIDE").arg(shownName));
 }
