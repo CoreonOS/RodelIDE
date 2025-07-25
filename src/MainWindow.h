@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QTextEdit>
+#include "AutoBracketTextEdit.h"
 #include <QString>
 
 class MainWindow : public QMainWindow
@@ -23,7 +23,7 @@ private:
     bool saveToFile(const QString &fileName);
     bool loadFromFile(const QString &fileName);
 
-    QTextEdit *editor;
+    AutoBracketTextEdit *editor;
     QString currentFile;
 };
 

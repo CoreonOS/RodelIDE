@@ -21,6 +21,7 @@ endif()
 set(SOURCES
     src/main.cpp
     src/MainWindow.cpp
+    src/AutoBracketTextEdit.cpp
 )
 set(HEADERS
     src/MainWindow.h

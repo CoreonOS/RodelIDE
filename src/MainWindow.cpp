@@ -1,4 +1,5 @@
 #include "MainWindow.h"
+#include "AutoBracketTextEdit.h"
 
 #include <QMenuBar>
 #include <QFileDialog>
@@ -12,7 +13,7 @@
 #include <QFont>
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent), editor(new QTextEdit(this))
+    : QMainWindow(parent), editor(new AutoBracketTextEdit(this))
 {
     setCentralWidget(editor);
 
