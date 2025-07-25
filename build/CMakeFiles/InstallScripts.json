@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/drxco/RodelIDE/simple-ide/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

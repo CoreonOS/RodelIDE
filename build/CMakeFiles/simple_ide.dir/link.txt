@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/simple_ide.dir/link.d CMakeFiles/simple_ide.dir/src/main.cpp.o CMakeFiles/simple_ide.dir/src/MainWindow.cpp.o -o simple_ide  /usr/lib/libQt6Widgets.so.6.9.1 /usr/lib/libQt6Gui.so.6.9.1 /usr/lib/libGLX.so /usr/lib/libOpenGL.so /usr/lib/libQt6Core.so.6.9.1

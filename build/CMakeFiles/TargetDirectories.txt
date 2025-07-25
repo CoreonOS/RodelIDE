@@ -1,0 +1,3 @@
+/home/drxco/RodelIDE/simple-ide/build/CMakeFiles/simple_ide.dir
+/home/drxco/RodelIDE/simple-ide/build/CMakeFiles/edit_cache.dir
+/home/drxco/RodelIDE/simple-ide/build/CMakeFiles/rebuild_cache.dir
